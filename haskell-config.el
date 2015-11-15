@@ -10,7 +10,6 @@
 (custom-set-variables '(haskell-tags-on-save t))
 
 (custom-set-variables
-  '(haskell-process-suggest-remove-import-lines t)
   '(haskell-process-auto-import-loaded-modules t)
   '(haskell-process-log t))
 (eval-after-load 'haskell-mode '(progn
@@ -47,3 +46,4 @@
 (add-hook 'haskell-mode-hook 'company-mode)
 (add-to-list 'company-backends 'company-ghc)
 (custom-set-variables '(company-ghc-show-info t))
+;;; to run the spec code haskell-session-change-target RET spec

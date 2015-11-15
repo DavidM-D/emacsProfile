@@ -1,1 +1,1 @@
-(global-set-key (kbd "C-c C-v") 'magit-status)
+(global-set-key (kbd "s-b") 'magit-status)
