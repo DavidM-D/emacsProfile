@@ -34,7 +34,7 @@
   '(define-key haskell-cabal-mode-map (kbd "C-c C-o") 'haskell-compile))
 
 ;; ghc-mod
-(add-to-list 'load-path "~/.cabal/share/ghc-mod-5.3.0.0")
+(add-to-list 'load-path "~/.cabal/share/ghc-mod-5.4.0.0")
 
 (autoload 'ghc-init "ghc" nil t)
 (autoload 'ghc-debug "ghc" nil t)

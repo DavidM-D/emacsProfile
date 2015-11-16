@@ -1,0 +1,13 @@
+(global-set-key (kbd "s-/") 'comment-dwim) 
+(global-set-key (kbd "s-c") 'copy-region-as-kill)
+(global-set-key (kbd "s-z") 'undo)
+(global-set-key (kbd "s-x") 'kill-region)
+(global-set-key (kbd "s-s") 'save-buffer)
+(global-set-key (kbd "s-t") 'textmate-goto-file)
+(global-set-key (kbd "s-u") 'ag-project)
+(global-set-key (kbd "s-v") 'yank)
+;;; make this into a function
+(global-set-key (kbd "C-x C-l") 'linum-mode)
+(global-set-key (kbd "s-l") 'goto-line)
+(global-set-key (kbd "s-a") 'mark-whole-buffer)
+(global-set-key (kbd "C-x o") 'ace-window)
