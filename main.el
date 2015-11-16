@@ -1,3 +1,8 @@
+;;; brew stuff
+(if (eq system-type 'darwin)
+    (let ((default-directory "/usr/local/share/emacs/site-lisp/"))
+      (normal-top-level-add-subdirs-to-load-path))
+)
 
 ;;; remove uneeded GUI
 (tool-bar-mode -1)
@@ -20,7 +25,7 @@
  '(company-ghc-show-info t)
  '(custom-safe-themes
    (quote
-    ("a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
+    ("11636897679ca534f0dec6f5e3cb12f28bf217a527755f6b9e744bd240ed47e1", "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(haskell-process-auto-import-loaded-modules t)
  '(haskell-process-log t)
  '(haskell-process-suggest-remove-import-lines t)
@@ -63,6 +68,7 @@
 (load-file "git.el")
 (load-file "langfmt.el")
 (set-face-attribute 'default nil :height 100)
+
 (setq backup-directory-alist `(("." . "~/.saves")))
 (load "editorconfig")
 (require 'go-mode-autoloads)
@@ -71,3 +77,9 @@
 (winner-mode 1)
 (menu-bar-mode -1)
 (setq initial-scratch-message nil)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+;;; path add
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
