@@ -61,12 +61,12 @@
 (delete-selection-mode 1)
 (require 'multiple-cursors)
 (add-to-list 'load-path "~/emacsProfile")
-(load-file "ruby.el")
-(load-file "javascript.el")
-(load-file "haskell-config.el") ;; renamed to avoid naming conflict with haskell vars
-(load-file "keybindings.el")
-(load-file "git.el")
-(load-file "langfmt.el")
+(load "ruby.el")
+(load "javascript.el")
+(load "haskell-config.el") ;; renamed to avoid naming conflict with haskell vars
+(load "keybindings.el")
+(load "git.el")
+(load "langfmt.el")
 (set-face-attribute 'default nil :height 100)
 
 (setq backup-directory-alist `(("." . "~/.saves")))
