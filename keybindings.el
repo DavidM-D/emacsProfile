@@ -11,3 +11,6 @@
 (global-set-key (kbd "s-l") 'goto-line)
 (global-set-key (kbd "s-a") 'mark-whole-buffer)
 (global-set-key (kbd "C-x o") 'ace-window)
+;;; set text size
+(global-set-key (kbd "s-=") 'text-scale-increase)
+(global-set-key (kbd "s--") 'text-scale-decrease)
