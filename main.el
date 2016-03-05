@@ -67,8 +67,10 @@
 (load "keybindings.el")
 (load "git.el")
 (load "langfmt.el")
+
 (load "html.el")
-(set-face-attribute 'default nil :height 100)
+(load "utils.el")
+(set-face-attribute 'default nil :height 105)
 
 (setq backup-directory-alist `(("." . "~/.saves")))
 (load "editorconfig")
