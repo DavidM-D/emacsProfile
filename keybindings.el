@@ -3,7 +3,7 @@
 (global-set-key (kbd "s-z") 'undo)
 (global-set-key (kbd "s-x") 'kill-region)
 (global-set-key (kbd "s-s") 'save-buffer)
-(global-set-key (kbd "s-t") 'textmate-goto-file)
+(global-set-key (kbd "s-t") 'projectile-find-file)
 (global-set-key (kbd "s-u") 'ag-project)
 (global-set-key (kbd "s-v") 'yank)
 ;;; make this into a function
@@ -14,3 +14,4 @@
 ;;; set text size
 (global-set-key (kbd "s-=") 'text-scale-increase)
 (global-set-key (kbd "s--") 'text-scale-decrease)
+(global-set-key (kbd "s-b") 'magit-status)

@@ -70,7 +70,7 @@
 
 (load "html.el")
 (load "utils.el")
-(set-face-attribute 'default nil :height 105)
+(set-face-attribute 'default nil :height 85)
 
 (setq backup-directory-alist `(("." . "~/.saves")))
 (load "editorconfig")
